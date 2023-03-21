@@ -2,7 +2,7 @@ clc;
 clear;
 close all;
 
-img = imread('1.jpg');
+img = imread('C:\Users\lider\OneDrive - stu.xaut.edu.cn\桌面\111.jpg');
 
 gray = rgb2gray(img);
 figure('name', 'gray');

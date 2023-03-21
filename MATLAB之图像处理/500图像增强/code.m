@@ -3,7 +3,7 @@ clear
 close all;
 
 % ∂¡Õº
-img = imread('1.jpg');
+img = imread('11.jpg');
 
 %ª“∂»Õº¥¶¿Ì
 gray = rgb2gray(img);

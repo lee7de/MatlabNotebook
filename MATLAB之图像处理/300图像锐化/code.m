@@ -2,18 +2,20 @@ clc;
 clear;
 close all;
 
-img = imread('1.jpg');
+img = imread('3.jpg');
 
 figure('name', '原图');
-imshow(img);
+% imshow(img);
 
 gray = rgb2gray(img);
+% figure("Name",'gray');
+imshow(gray);
+
 [m, n] = size(gray);
 
 % 预设好矩阵大小
 x_sobel = double(gray);
 y_sobel = double(gray);
-img_sobel = gray;
 for i = 2:m-1
     for j = 2:n-1
         % 分别用x、y方向的算子检测边缘，然后合成
@@ -30,4 +32,4 @@ end
 img_sobel = sqrt(x_sobel.^2 + y_sobel.^2);
 figure('name', 'img_sobel');
 imshow(uint8(img_sobel));
-
+% imshow(img_sobel);

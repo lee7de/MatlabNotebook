@@ -7,8 +7,8 @@ img = imread('1.jpg');
 figure('name', 'original image');
 imshow(img);
 
-figure(12);
-imshow(histeq(img, 256));
+% figure(12);
+% imshow(histeq(img, 256));
 
 %≤ Õº¥¶¿Ì
 r = img(:, :, 1);

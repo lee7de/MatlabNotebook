@@ -1,6 +1,6 @@
 %主函数
 function coloraverage()
-I=imread('1.jpg');
+I=imread('111.png');
 imshow(I);
 I1=I(:,:,1);%提取红色分量
 I2=I(:,:,2);%提取绿色分量
